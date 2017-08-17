@@ -5,7 +5,14 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'devise'
+gem 'haml-rails', '~> 0.9'
+gem 'bootstrap-sass', '~> 3.3.6'
 gem 'nokogiri'
+gem 'jquery-rails'
+gem 'omniauth'
+gem 'omniauth-facebook'
+
 gem 'carrierwave', '~> 1.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
