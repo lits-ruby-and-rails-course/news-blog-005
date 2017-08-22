@@ -1,0 +1,4 @@
+%h3= @post.title
+- if @post.image
+  = image_tag @post.image.source.url, width: 600, class: 'img-rounded'
+= @post.content.html_safe
