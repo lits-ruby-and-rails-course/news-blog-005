@@ -7,6 +7,9 @@ class Ability
       can :manage, :all
     elsif user.user?
       can :read, :all
+      can :manage, Comment do |comment|
+        comment.user_id == user.id
+      end
     end
 
     # Define abilities for the passed in user here. For example:

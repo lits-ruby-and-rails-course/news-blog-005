@@ -15,7 +15,7 @@
               News
               %span Blog
         .profile.text-right.col-md-6
-          - if current_user.admin?
+          - if current_user && current_user.admin?
             = link_to 'Admin panel', [:admin, :posts]
           - if user_signed_in?
             = link_to current_user.email, edit_user_registration_path

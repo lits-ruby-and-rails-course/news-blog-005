@@ -5,6 +5,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable, :omniauth_providers => [:facebook]
 
+  has_many :comments
+
   ROLES.each do |role_name|
     define_method "#{role_name}?" do
       role == role_name
