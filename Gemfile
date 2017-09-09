@@ -14,6 +14,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'truncate_html'
 gem 'cancancan', '~> 2.0'
+gem 'social-share-button'
 
 gem 'carrierwave', '~> 1.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
